@@ -396,3 +396,15 @@ h1 span{color:var(--cyan)}
     grid-template-columns:1fr;
   }
 }
+
+/* ===== v4.7 clipped text cleanup ===== */
+.approved-visual img{
+  max-width:700px;
+  transform:translateX(26px);
+}
+@media(max-width:1160px){
+  .approved-visual img{
+    max-width:720px;
+    transform:none;
+  }
+}

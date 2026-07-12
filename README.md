@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v4.6
+# TylerCaraffi.com — Project Blueprint v4.7
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -74,3 +74,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Embedded the approved blueprint building directly inside index.html.
 - The hero graphic no longer depends on a separate PNG file or file path.
 - This eliminates GitHub Pages image-path and upload issues.
+
+## v4.7 clipped-text cleanup
+- Re-cropped the approved hero artwork to include only the building and right-side callouts.
+- Removed the stray partial words that appeared between the headline and building.
+- Preserved the exact approved building artwork and embedded-image reliability.
