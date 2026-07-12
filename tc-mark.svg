@@ -518,3 +518,52 @@ h1 span{color:var(--cyan)}
     align-self:end;
   }
 }
+
+/* ===== v4.3 faithful concept layout ===== */
+.home-page{--home-max:1640px}
+.home-page .site-header .container,.home-page main>.hero .container,.home-page main>.practice-cards-section .container{width:min(calc(100% - 72px),var(--home-max));max-width:none}
+.home-page .nav-wrap{min-height:74px}
+.home-page .site-nav{gap:30px}
+.home-page .hero{min-height:700px;padding:58px 0 64px}
+.home-page .hero-split{display:grid;grid-template-columns:minmax(560px,1fr) minmax(610px,.95fr);gap:38px;align-items:center}
+.home-page .hero-copy{max-width:760px}
+.home-page .hero-copy h1{margin:18px 0 22px;font-size:clamp(5rem,6.7vw,7.5rem);line-height:.82;letter-spacing:-.065em}
+.home-page .hero-name,.home-page .hero-credential{display:block}
+.home-page .hero-name{color:var(--text);white-space:nowrap}
+.home-page .hero-comma{color:var(--cyan)}
+.home-page .hero-credential{color:var(--cyan);margin-top:18px}
+.home-page .hero-role{font-size:1.08rem}
+.home-page .hero-lead{font-size:clamp(1.72rem,2.25vw,2.35rem);line-height:1.22;max-width:720px;margin-bottom:20px}
+.home-page .hero-sub{font-size:1.02rem;max-width:700px}
+.home-page .hero-actions{margin-top:28px}
+.home-page .button svg{width:20px;height:20px;margin-right:9px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.home-page .hero-visual{min-height:570px;position:relative;display:flex;align-items:center;justify-content:flex-start;padding-right:140px;overflow:visible}
+.home-page .hero-visual img{width:min(100%,650px);max-width:none;transform:none;filter:drop-shadow(0 18px 42px rgba(32,134,207,.2))}
+.home-page .hero-callout{position:absolute;right:0;display:flex;align-items:center;gap:12px;color:var(--cyan2);font-size:.73rem;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;z-index:3}
+.home-page .hero-callout i{width:62px;height:1px;background:rgba(105,216,230,.5);display:block}
+.home-page .hero-callout.c1{top:20%}.home-page .hero-callout.c2{top:36%}.home-page .hero-callout.c3{top:53%}.home-page .hero-callout.c4{top:70%}
+.home-page .practice-cards-section{padding:62px 0 72px}
+.home-page .practice-heading-grid{grid-template-columns:1fr .9fr;gap:84px;margin-bottom:30px;align-items:end}
+.home-page .practice-heading-grid h2{font-size:clamp(2.8rem,4vw,4.2rem);max-width:650px}
+.home-page .practice-heading-grid>p{max-width:620px;font-size:1.05rem}
+.home-page .practice-card-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.home-page .practice-card{min-height:230px;padding:22px 18px 20px}
+.home-page .practice-icon{width:54px;height:54px;margin:0 auto 15px}
+.home-page .practice-icon svg{width:46px;height:46px;fill:none;stroke:#55a8ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.home-page .practice-card h3{font-size:1.02rem}
+.home-page .practice-card p{font-size:.85rem}
+@media(max-width:1450px){
+ .home-page .site-header .container,.home-page main>.hero .container,.home-page main>.practice-cards-section .container{width:min(calc(100% - 52px),1380px)}
+ .home-page .hero-split{grid-template-columns:minmax(520px,1fr) minmax(520px,.9fr)}
+ .home-page .hero-visual{padding-right:110px}.home-page .hero-callout i{width:44px}
+}
+@media(max-width:1180px){
+ .home-page .hero-split{grid-template-columns:1fr;gap:24px}.home-page .hero-copy{max-width:850px}.home-page .hero-visual{min-height:500px;padding-right:150px;justify-content:center}
+ .home-page .practice-card-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:760px){
+ .home-page .site-header .container,.home-page main>.hero .container,.home-page main>.practice-cards-section .container{width:min(calc(100% - 28px),720px)}
+ .home-page .hero{padding:66px 0 48px}.home-page .hero-copy h1{font-size:clamp(3.8rem,16vw,5.25rem)}.home-page .hero-name{white-space:normal}
+ .home-page .hero-visual{min-height:360px;padding-right:0}.home-page .hero-callout{display:none}
+ .home-page .practice-heading-grid{grid-template-columns:1fr;gap:20px}.home-page .practice-card-grid{grid-template-columns:1fr}
+}

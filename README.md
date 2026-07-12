@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v4.2
+# TylerCaraffi.com — Project Blueprint v4.3
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -52,3 +52,9 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Rebuilt the blueprint SVG so it no longer shrinks because of out-of-bounds text.
 - Moved callout labels into HTML for predictable placement.
 - Increased the hero content width and building size to match the approved concept.
+
+## v4.3 faithful concept layout
+- Expanded the homepage width to match the approved mockup.
+- Corrected hero typography and comma placement.
+- Enlarged the building and restored full callout labels.
+- Added true outline SVG icons for all six practice cards.
