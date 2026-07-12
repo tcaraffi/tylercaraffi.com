@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v3.2
+# TylerCaraffi.com — Project Blueprint v3.3
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -28,3 +28,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Re-centered the brand on telecommunications infrastructure and security systems.
 - Reduced BIM/Revit from a primary brand pillar to a supporting design-delivery capability.
 - Renamed the large Revit feature section to Design Delivery.
+
+## v3.3 contact update
+- LinkedIn button now opens Tyler Caraffi's profile.
+- Email contact now uses tcaraffi@gmail.com.
+- Homepage Person structured data includes the correct LinkedIn profile.
