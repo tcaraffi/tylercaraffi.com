@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v5.1
+# TylerCaraffi.com — Project Blueprint v5.2
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -90,7 +90,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Added reduced-motion accessibility support.
 - Added the signature line: Designed for Construction. Built for the Future.
 
-## v5.1 icon correction
-- Replaced black placeholder glyphs with six custom inline SVG icons.
-- Matched the cyan/blue visual language of the approved homepage concept.
-- Preserved hover, motion, responsive layout, and accessibility.
+## v5.2 Areas of Practice repair
+- Restored all six practice cards after the previous icon replacement collapsed the section.
+- Added clean inline SVG icons for each discipline.
+- Repaired the six-column desktop layout and responsive tablet/mobile layouts.
+- Preserved the animated homepage and scroll effects.
