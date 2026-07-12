@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v5.0
+# TylerCaraffi.com — Project Blueprint v5.1
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -89,3 +89,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Added subtle mouse parallax to the blueprint visual.
 - Added reduced-motion accessibility support.
 - Added the signature line: Designed for Construction. Built for the Future.
+
+## v5.1 icon correction
+- Replaced black placeholder glyphs with six custom inline SVG icons.
+- Matched the cyan/blue visual language of the approved homepage concept.
+- Preserved hover, motion, responsive layout, and accessibility.

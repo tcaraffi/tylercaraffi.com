@@ -628,3 +628,29 @@ h1 span{color:var(--cyan)}
     transform:none !important;
   }
 }
+
+/* ===== v5.1 practice icon fix ===== */
+.practice-icon{
+  width:66px;
+  height:66px;
+  margin:0 auto 20px;
+  display:grid;
+  place-items:center;
+  color:#5aa7ff;
+}
+.practice-icon svg{
+  width:58px;
+  height:58px;
+  display:block;
+  stroke:currentColor;
+  stroke-width:2.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  filter:drop-shadow(0 0 8px rgba(90,167,255,.14));
+}
+.practice-card:hover .practice-icon{
+  color:#75c4ff;
+}
+@media(max-width:760px){
+  .practice-icon{margin:0;}
+}
