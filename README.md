@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v4.4
+# TylerCaraffi.com — Project Blueprint v4.5
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -64,3 +64,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Removed separate HTML callouts that were overlapping and misaligning.
 - Preserved responsive HTML text, buttons, navigation, SEO, and accessibility.
 - Corrected hero proportions and scaling.
+
+## v4.5 building image path fix
+- Added the approved building artwork as a root-level file: blueprint-building.png.
+- Updated index.html to reference the root-level image directly.
+- Added a cache-busting version query so browsers do not reuse the broken image path.
