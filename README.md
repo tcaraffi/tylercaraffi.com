@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v4.7
+# TylerCaraffi.com — Project Blueprint v5.0
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -79,3 +79,13 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Re-cropped the approved hero artwork to include only the building and right-side callouts.
 - Removed the stray partial words that appeared between the headline and building.
 - Preserved the exact approved building artwork and embedded-image reliability.
+
+## v5.0 motion and polish
+- Enlarged the hero and blueprint graphic.
+- Added a subtle animated blueprint glow and light sweep.
+- Added floating motion to the building artwork.
+- Added staggered hero text reveals.
+- Added scroll-triggered Areas of Practice card animations.
+- Added subtle mouse parallax to the blueprint visual.
+- Added reduced-motion accessibility support.
+- Added the signature line: Designed for Construction. Built for the Future.

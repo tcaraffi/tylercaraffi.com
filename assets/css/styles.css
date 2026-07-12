@@ -408,3 +408,223 @@ h1 span{color:var(--cyan)}
     transform:none;
   }
 }
+
+/* ===== v5.0 Motion & Polish ===== */
+.hero{
+  min-height:740px;
+  padding:70px 0 82px;
+}
+
+.hero .container{
+  width:min(1520px, calc(100% - 64px));
+}
+
+.approved-hero{
+  grid-template-columns:minmax(0,.94fr) minmax(620px,1.06fr);
+  gap:30px;
+}
+
+.hero-copy h1{
+  font-size:clamp(5rem,7.4vw,7.7rem);
+}
+
+.hero .hero-lead{
+  font-size:clamp(1.8rem,2.6vw,2.45rem);
+  max-width:700px;
+}
+
+.hero .hero-sub{
+  font-size:1.06rem;
+  max-width:700px;
+}
+
+.hero-signature{
+  margin:0 0 18px;
+  color:var(--cyan2);
+  font-size:.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.blueprint-stage{
+  position:relative;
+  isolation:isolate;
+  min-height:610px;
+}
+
+.blueprint-stage img{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  animation:blueprintFloat 7s ease-in-out infinite;
+  will-change:transform,filter;
+}
+
+.blueprint-glow{
+  position:absolute;
+  z-index:1;
+  width:72%;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(58,162,222,.20),rgba(58,162,222,.05) 42%,transparent 70%);
+  filter:blur(16px);
+  animation:blueprintPulse 5.5s ease-in-out infinite;
+  pointer-events:none;
+}
+
+.blueprint-stage::after{
+  content:"";
+  position:absolute;
+  inset:10% 2% 7% 4%;
+  z-index:3;
+  background:linear-gradient(110deg,transparent 36%,rgba(126,237,244,.10) 49%,transparent 62%);
+  transform:translateX(-120%);
+  animation:blueprintSweep 8s ease-in-out infinite;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+
+.hero-copy .kicker,
+.hero-copy h1,
+.hero-role,
+.hero-rule,
+.hero-signature,
+.hero-lead,
+.hero-sub,
+.hero-actions{
+  opacity:0;
+  transform:translateY(18px);
+  animation:heroRise .75s cubic-bezier(.2,.7,.2,1) forwards;
+}
+
+.hero-copy h1{animation-delay:.08s}
+.hero-role{animation-delay:.16s}
+.hero-rule{animation-delay:.22s}
+.hero-signature{animation-delay:.27s}
+.hero-lead{animation-delay:.34s}
+.hero-sub{animation-delay:.44s}
+.hero-actions{animation-delay:.54s}
+
+.practice-card{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity .7s cubic-bezier(.2,.7,.2,1),
+    transform .7s cubic-bezier(.2,.7,.2,1),
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.practice-card.is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.practice-card[data-stagger="1"]{transition-delay:.04s}
+.practice-card[data-stagger="2"]{transition-delay:.10s}
+.practice-card[data-stagger="3"]{transition-delay:.16s}
+.practice-card[data-stagger="4"]{transition-delay:.22s}
+.practice-card[data-stagger="5"]{transition-delay:.28s}
+.practice-card[data-stagger="6"]{transition-delay:.34s}
+
+.site-header{
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:0 1px 0 rgba(255,255,255,.03);
+}
+
+.button{
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.button:hover{
+  transform:translateY(-2px);
+}
+
+.button.primary:hover{
+  box-shadow:0 12px 30px rgba(47,120,189,.28);
+}
+
+.blueprint-bg::before{
+  animation:gridDrift 28s linear infinite;
+}
+
+@keyframes heroRise{
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes blueprintFloat{
+  0%,100%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-8px) scale(1.006)}
+}
+
+@keyframes blueprintPulse{
+  0%,100%{opacity:.58;transform:scale(.96)}
+  50%{opacity:1;transform:scale(1.04)}
+}
+
+@keyframes blueprintSweep{
+  0%,18%{transform:translateX(-130%);opacity:0}
+  35%{opacity:1}
+  58%{transform:translateX(130%);opacity:0}
+  100%{transform:translateX(130%);opacity:0}
+}
+
+@keyframes gridDrift{
+  from{background-position:0 0,0 0}
+  to{background-position:80px 40px,-80px -40px}
+}
+
+@media(max-width:1160px){
+  .approved-hero{
+    grid-template-columns:1fr;
+  }
+
+  .blueprint-stage{
+    min-height:500px;
+  }
+}
+
+@media(max-width:760px){
+  .hero{
+    min-height:auto;
+    padding:66px 0 50px;
+  }
+
+  .hero .container{
+    width:min(100% - 28px,720px);
+  }
+
+  .blueprint-stage{
+    min-height:330px;
+  }
+
+  .hero-signature{
+    font-size:.7rem;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+    transition-duration:.01ms !important;
+  }
+
+  .hero-copy .kicker,
+  .hero-copy h1,
+  .hero-role,
+  .hero-rule,
+  .hero-signature,
+  .hero-lead,
+  .hero-sub,
+  .hero-actions,
+  .practice-card{
+    opacity:1 !important;
+    transform:none !important;
+  }
+}
