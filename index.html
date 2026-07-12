@@ -75,34 +75,75 @@
       </div>
 
       <div class="system-diagram reveal delay-1" aria-label="Conceptual ICT system hierarchy">
-        <div class="diagram-title">Connected Building Infrastructure</div>
-        <div class="diagram-flow">
-          <div class="diagram-node primary-node">MDF</div>
-          <div class="diagram-link vertical-link"><span class="signal-pulse pulse-one"></span></div>
-          <div class="diagram-node backbone-node">Fiber Backbone</div>
-          <div class="diagram-link vertical-link"><span class="signal-pulse pulse-two"></span></div>
-          <div class="diagram-node primary-node">IDF</div>
+        <svg viewBox="0 0 520 430" role="img" aria-labelledby="diagramTitle diagramDesc"
+             style="display:block;width:100%;height:100%;min-height:430px;">
+          <title id="diagramTitle">Connected Building Infrastructure</title>
+          <desc id="diagramDesc">MDF connected by fiber backbone to an IDF, which distributes services to security, wireless, and data systems.</desc>
 
-          <div class="distribution-tree" aria-hidden="true">
-            <span class="tree-stem"></span>
-            <span class="tree-bar"></span>
-            <span class="tree-drop drop-left"></span>
-            <span class="tree-drop drop-center"></span>
-            <span class="tree-drop drop-right"></span>
-          </div>
+          <defs>
+            <linearGradient id="nodeFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#173552"/>
+              <stop offset="100%" stop-color="#0d2237"/>
+            </linearGradient>
+            <linearGradient id="lineGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2d6ca3"/>
+              <stop offset="100%" stop-color="#71d6e0"/>
+            </linearGradient>
+            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
 
-          <div class="endpoint-grid">
-            <div class="diagram-node endpoint-node">
-              <span class="endpoint-icon">S</span><span>Security</span>
-            </div>
-            <div class="diagram-node endpoint-node">
-              <span class="endpoint-icon">W</span><span>Wireless</span>
-            </div>
-            <div class="diagram-node endpoint-node">
-              <span class="endpoint-icon">D</span><span>Data</span>
-            </div>
-          </div>
-        </div>
+          <text x="28" y="36" fill="#a6b4c5" font-size="13" font-family="Arial, sans-serif" letter-spacing="2">
+            CONNECTED BUILDING INFRASTRUCTURE
+          </text>
+
+          <!-- Main vertical hierarchy -->
+          <g font-family="Arial, sans-serif" text-anchor="middle">
+            <rect x="210" y="64" width="100" height="52" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="260" y="96" fill="#f7f9fc" font-size="17" font-weight="700">MDF</text>
+
+            <line x1="260" y1="116" x2="260" y2="154" stroke="url(#lineGradient)" stroke-width="2"/>
+
+            <rect x="170" y="154" width="180" height="56" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="260" y="188" fill="#f7f9fc" font-size="16" font-weight="700">Fiber Backbone</text>
+
+            <line x1="260" y1="210" x2="260" y2="248" stroke="url(#lineGradient)" stroke-width="2"/>
+
+            <rect x="210" y="248" width="100" height="52" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="260" y="280" fill="#f7f9fc" font-size="17" font-weight="700">IDF</text>
+
+            <!-- Distribution tree -->
+            <line x1="260" y1="300" x2="260" y2="330" stroke="url(#lineGradient)" stroke-width="2"/>
+            <line x1="100" y1="330" x2="420" y2="330" stroke="url(#lineGradient)" stroke-width="2"/>
+            <line x1="100" y1="330" x2="100" y2="354" stroke="url(#lineGradient)" stroke-width="2"/>
+            <line x1="260" y1="330" x2="260" y2="354" stroke="url(#lineGradient)" stroke-width="2"/>
+            <line x1="420" y1="330" x2="420" y2="354" stroke="url(#lineGradient)" stroke-width="2"/>
+
+            <!-- Endpoints -->
+            <rect x="43" y="354" width="114" height="52" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="100" y="386" fill="#f7f9fc" font-size="15" font-weight="700">Security</text>
+
+            <rect x="203" y="354" width="114" height="52" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="260" y="386" fill="#f7f9fc" font-size="15" font-weight="700">Wireless</text>
+
+            <rect x="363" y="354" width="114" height="52" rx="13" fill="url(#nodeFill)" stroke="#4aa0c8" stroke-width="1.2"/>
+            <text x="420" y="386" fill="#f7f9fc" font-size="15" font-weight="700">Data</text>
+          </g>
+
+          <!-- Animated signal pulses -->
+          <circle r="4" fill="#71d6e0" filter="url(#softGlow)">
+            <animateMotion dur="2.8s" repeatCount="indefinite" path="M260 116 L260 248"/>
+          </circle>
+          <circle r="4" fill="#71d6e0" filter="url(#softGlow)">
+            <animateMotion begin="1.4s" dur="3.2s" repeatCount="indefinite"
+              path="M260 300 L260 330 L420 330 L420 354"/>
+          </circle>
+        </svg>
       </div>
     </div>
   </section>
