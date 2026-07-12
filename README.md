@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v3.1
+# TylerCaraffi.com — Project Blueprint v3.2
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -22,8 +22,9 @@ Update the placeholder LinkedIn URL and email address in `contact.html`.
 ## Upload
 Upload everything in this folder to the repository root. Allow GitHub to replace existing files, but do not delete `CNAME`.
 
-## v3.1 update
-- Rebuilt the connected-building infrastructure graphic as a clean vertical hierarchy.
-- Added properly connected Security, Wireless, and Data endpoints.
-- Added subtle animated signal pulses.
-- Improved mobile spacing and alignment.
+## v3.2 direction update
+- Removed the connected-building graphic entirely.
+- Simplified the hero into a cleaner, text-led presentation.
+- Re-centered the brand on telecommunications infrastructure and security systems.
+- Reduced BIM/Revit from a primary brand pillar to a supporting design-delivery capability.
+- Renamed the large Revit feature section to Design Delivery.
