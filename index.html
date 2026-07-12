@@ -74,19 +74,35 @@
         </div>
       </div>
 
-      <div class="system-diagram reveal delay-1" aria-label="Conceptual ICT system diagram">
+      <div class="system-diagram reveal delay-1" aria-label="Conceptual ICT system hierarchy">
         <div class="diagram-title">Connected Building Infrastructure</div>
-        <div class="node node-a">MDF</div>
-        <div class="line line-a"></div>
-        <div class="node node-b">Fiber Backbone</div>
-        <div class="line line-b"></div>
-        <div class="node node-c">IDF</div>
-        <div class="branch branch-1"></div>
-        <div class="branch branch-2"></div>
-        <div class="branch branch-3"></div>
-        <div class="mini-node mini-1">Security</div>
-        <div class="mini-node mini-2">Wireless</div>
-        <div class="mini-node mini-3">Data</div>
+        <div class="diagram-flow">
+          <div class="diagram-node primary-node">MDF</div>
+          <div class="diagram-link vertical-link"><span class="signal-pulse pulse-one"></span></div>
+          <div class="diagram-node backbone-node">Fiber Backbone</div>
+          <div class="diagram-link vertical-link"><span class="signal-pulse pulse-two"></span></div>
+          <div class="diagram-node primary-node">IDF</div>
+
+          <div class="distribution-tree" aria-hidden="true">
+            <span class="tree-stem"></span>
+            <span class="tree-bar"></span>
+            <span class="tree-drop drop-left"></span>
+            <span class="tree-drop drop-center"></span>
+            <span class="tree-drop drop-right"></span>
+          </div>
+
+          <div class="endpoint-grid">
+            <div class="diagram-node endpoint-node">
+              <span class="endpoint-icon">S</span><span>Security</span>
+            </div>
+            <div class="diagram-node endpoint-node">
+              <span class="endpoint-icon">W</span><span>Wireless</span>
+            </div>
+            <div class="diagram-node endpoint-node">
+              <span class="endpoint-icon">D</span><span>Data</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
