@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v3.3
+# TylerCaraffi.com — Project Blueprint v4.0
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -33,3 +33,9 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - LinkedIn button now opens Tyler Caraffi's profile.
 - Email contact now uses tcaraffi@gmail.com.
 - Homepage Person structured data includes the correct LinkedIn profile.
+
+## v4.0 Professional Identity
+- Repositioned the homepage around RCDD | ICT Infrastructure Designer.
+- Added Areas of Practice and Representative Experience preview.
+- Strengthened the design philosophy around Designed for Construction. Built for the Future.
+- Preserved working LinkedIn and email links.
