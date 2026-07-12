@@ -1,0 +1,29 @@
+
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.site-nav');
+if(toggle&&nav){
+  toggle.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded','false');
+  }));
+}
+const year=document.getElementById('year');
+if(year) year.textContent=new Date().getFullYear();
+const items=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:.12});
+  items.forEach(i=>observer.observe(i));
+}else{
+  items.forEach(i=>i.classList.add('visible'));
+}

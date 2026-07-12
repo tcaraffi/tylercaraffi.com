@@ -1,29 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Tyler Caraffi, RCDD</title>
+  <meta name="description" content="About Tyler Caraffi, RCDD, and his expertise in telecommunications, security, BIM, and Revit.">
+  <meta name="author" content="Tyler Caraffi">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tylercaraffi.com/about.html">
+  <link rel="icon" href="assets/icons/tc-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
 
-const toggle=document.querySelector('.nav-toggle');
-const nav=document.querySelector('.site-nav');
-if(toggle&&nav){
-  toggle.addEventListener('click',()=>{
-    const open=nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded',String(open));
-  });
-  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-    nav.classList.remove('open');
-    toggle.setAttribute('aria-expanded','false');
-  }));
-}
-const year=document.getElementById('year');
-if(year) year.textContent=new Date().getFullYear();
-const items=document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window){
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },{threshold:.12});
-  items.forEach(i=>observer.observe(i));
-}else{
-  items.forEach(i=>i.classList.add('visible'));
-}
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Tyler Caraffi home">
+      <span class="brand-mark">TC</span>
+      <span class="brand-copy"><strong>Tyler Caraffi</strong><small>RCDD</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="experience.html">Experience</a>
+      <a href="revit-lab.html">BIM / Revit</a>
+      <a href="insights.html">Insights</a>
+      <a href="studio.html">Studio</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero blueprint-bg">
+    <div class="container narrow reveal">
+      <span class="eyebrow">About</span>
+      <h1>A practical approach to ICT design.</h1>
+      <p>Telecommunications infrastructure, security systems, and BIM/Revit coordination grounded in constructability.</p>
+    </div>
+  </section>
+  
+<section class="content-section">
+  <div class="container split-content">
+    <div class="sticky-heading reveal">
+      <span class="eyebrow">Profile</span>
+      <h2>ICT design focused on coordination, constructability, and long-term performance.</h2>
+    </div>
+    <div class="prose reveal delay-1">
+      <p>Tyler Caraffi is an RCDD specializing in telecommunications infrastructure, security systems, hospitality technology, and BIM/Revit coordination.</p>
+      <p>His work focuses on translating owner requirements, brand standards, design criteria, and field realities into coordinated ICT documents that support installation, operations, and long-term performance.</p>
+      <p>Tyler’s strong Revit experience supports his ability to organize information, improve interdisciplinary coordination, develop standards, and create construction-ready documentation.</p>
+      <p>His approach is practical: reduce ambiguity, resolve conflicts early, and produce drawings that contractors can use with confidence.</p>
+    </div>
+  </div>
+</section>
+<section class="content-section dark-panel">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Current Focus</span>
+      <h2>Areas of active professional development.</h2>
+    </div>
+    <div class="tag-cloud reveal delay-1">
+      <span>ICT BIM Workflows</span><span>Hospitality Standards</span><span>Telecom Room Optimization</span>
+      <span>Security Coordination</span><span>Construction Documentation</span><span>Revit Standards</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-name">Tyler Caraffi, RCDD</div>
+      <p>Telecommunications Infrastructure • Security Systems • BIM / Revit</p>
+    </div>
+    <div class="footer-motto">Design with purpose. Coordinate with precision.</div>
+    <div class="footer-copy">© <span id="year"></span> Tyler Caraffi</div>
+  </div>
+</footer>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
