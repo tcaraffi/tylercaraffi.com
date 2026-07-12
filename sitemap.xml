@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://tylercaraffi.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://tylercaraffi.com/projects.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tylercaraffi.com/articles.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tylercaraffi.com/contact.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  <url><loc>https://tylercaraffi.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tylercaraffi.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/experience.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/revit-lab.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/insights.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/studio.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/certifications.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tylercaraffi.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

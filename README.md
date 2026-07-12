@@ -1,39 +1,23 @@
-# TylerCaraffi.com — Version 2
+# TylerCaraffi.com — Project Blueprint v3
 
-Professional website for Tyler Caraffi, RCDD.
+## Includes
+- Premium blueprint-inspired homepage
+- About page
+- Experience page
+- Revit Lab
+- Insights / Blueprint Notes
+- Studio resource page
+- Certifications page
+- Contact page
+- TC monogram favicon
+- Responsive design
+- SEO metadata, sitemap, and robots.txt
 
-## Positioning
-
-The site intentionally focuses on:
-
-- Telecommunications infrastructure
-- Structured cabling
-- Fiber backbone design
-- Security systems
-- Hospitality technology
-- Revit / BIM coordination
-- Construction documentation
-
-The site does **not** position Tyler as an audiovisual designer.
-
-## Files
-
-- `index.html` — homepage
-- `projects.html` — project experience
-- `articles.html` — technical library
-- `contact.html` — contact page
-- `styles.css` — responsive design
-- `script.js` — navigation and reveal effects
-- `robots.txt` — search crawler instructions
-- `sitemap.xml` — Google sitemap
+## Important
+Keep the existing `CNAME` file already in the GitHub repository.
 
 ## Before publishing
+Update the placeholder LinkedIn URL and email address in `contact.html`.
 
-Update two placeholders in `contact.html`:
-
-1. Replace `https://www.linkedin.com/` with Tyler's exact LinkedIn profile URL.
-2. Replace `contact@tylercaraffi.com` if a different email should be used.
-
-## Publish to GitHub
-
-Upload all files to the repository root and replace the existing files. Keep the existing `CNAME` file already in the repository.
+## Upload
+Upload everything in this folder to the repository root. Allow GitHub to replace existing files, but do not delete `CNAME`.
