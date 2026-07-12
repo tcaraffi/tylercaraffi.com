@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v4.1
+# TylerCaraffi.com — Project Blueprint v4.2
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -46,3 +46,9 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Added six visual Areas of Practice cards.
 - Updated the site header subtitle to ICT Infrastructure Designer.
 - Preserved all existing pages, Search Console verification, sitemap, contact information, LinkedIn link, and structured data.
+
+## v4.2 visual correction
+- Fixed the hero scale and two-column proportions.
+- Rebuilt the blueprint SVG so it no longer shrinks because of out-of-bounds text.
+- Moved callout labels into HTML for predictable placement.
+- Increased the hero content width and building size to match the approved concept.
