@@ -713,3 +713,32 @@ h1 span{color:var(--cyan)}
     margin:0;
   }
 }
+
+/* ===== v5.3 embedded practice icons ===== */
+.practice-icon{
+  width:72px;
+  height:72px;
+  margin:0 auto 20px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+}
+
+.practice-icon img{
+  display:block;
+  width:64px;
+  height:64px;
+  object-fit:contain;
+  opacity:1;
+  filter:drop-shadow(0 0 8px rgba(90,167,255,.18));
+}
+
+.practice-card:hover .practice-icon img{
+  filter:drop-shadow(0 0 12px rgba(117,196,255,.32));
+}
+
+@media(max-width:760px){
+  .practice-icon{
+    margin:0;
+  }
+}

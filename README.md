@@ -1,4 +1,4 @@
-# TylerCaraffi.com — Project Blueprint v5.2
+# TylerCaraffi.com — Project Blueprint v5.3
 
 ## Includes
 - Premium blueprint-inspired homepage
@@ -95,3 +95,8 @@ Upload everything in this folder to the repository root. Allow GitHub to replace
 - Added clean inline SVG icons for each discipline.
 - Repaired the six-column desktop layout and responsive tablet/mobile layouts.
 - Preserved the animated homepage and scroll effects.
+
+## v5.3 embedded icon fix
+- Replaced the non-rendering inline SVGs with six embedded transparent PNG icons.
+- Icons are stored directly inside index.html, so there are no external file paths to break.
+- Preserved the six-card layout, animations, and responsive behavior.
